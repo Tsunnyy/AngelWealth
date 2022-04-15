@@ -52,8 +52,27 @@
   nav {
     display: none;
   }
+  
+  .giveACall{
+    display: block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background: #ffca0d;
+    border-radius: 100%;
+    z-index: 999;
+  }
+  .giveACall svg{
+    position: absolute;
+    right: 11px;
+    bottom: 11px;
+  }
   .headerLogo .innerHeaderLogo svg {
     display: block;
+    font-size: 30px;
+    cursor: pointer;
   }
 }
 
@@ -77,11 +96,34 @@
 }
 
 @media (max-width: 767px) {
-  .mySwiper .swiper-wrapper .swiper-slide .textOnImg {
-    display: none;
+  #mainSlider{
+    height: 370px;
+    object-fit: cover;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg h2 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg p {
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg button {
+    padding: 7px 20px;
   }
 }
-
+@media (max-width: 576px) {
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg h2 {
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg p {
+    padding-bottom: 5px;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg button {
+    padding: 7px 15px;
+  }
+}
 @media (max-width: 991px) {
   .offers .innerOffer {
     flex-direction: column;
@@ -191,5 +233,94 @@
   }
   .factsFigure .figureNumbers p {
     font-style: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainCompanyValue {
+    flex-direction: column-reverse;
+  }
+  .mainCompanyValue .testimonials {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .mainCompanyValue .ourValues {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .page-contents p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ckeckList {
+    flex-wrap: wrap;
+  }
+  .ckeckList ul {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  label.nav span {
+    font-size: 12px;
+  }
+  label.nav svg {
+    font-size: 16px;
+  }
+  .page-contents h2 {
+    font-size: 16px;
+  }
+  .page-contents p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profiles {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+@media (max-width: 576px) {
+  .profiles {
+    margin: auto;
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .profiles figure figcaption h2 {
+    font-size: 15px;
+  }
+  .profiles figure figcaption p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .news {
+    padding: 40px 0;
+  }
+  .NewSecion {
+    flex-direction: column;
+  }
+  .NewSecion .leftNews,
+  .NewSecion .rightForm {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .newsInfo .newsPara p{
+    font-size: 12px;
+  }
+  .footerList{
+    padding: 20px 15px;
+  }
+  .socialMedia ul{
+    margin: 30px 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .footerList{
+    margin: 15px 15px;
   }
 }

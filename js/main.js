@@ -33,3 +33,15 @@ var swiper = new Swiper("#customerSlider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// Mobile Nav
+$(function () {
+    $('.innerHeaderLogo svg').on('click', function () {
+        $(".mobileNav").addClass("mobactive");
+        $(".body").css({'overflow':'hidden'});
+    })
+    $('.mobileNav .closebtn').on('click', function () {
+        $(".mobileNav").removeClass("mobactive");
+        $(".body").css({'overflow':'unset'});
+    })
+})

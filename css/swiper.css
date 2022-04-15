@@ -247,6 +247,15 @@
     left: 0;
     width: 100%;
 }
+#customerSlider .swiper-pagination{
+    bottom: 0;
+}
+#customerSlider .swiper-pagination-bullet{
+    border: 2px solid rgb(148, 148, 148);
+}
+#customerSlider .swiper-pagination-bullet-active{
+    border: 2px solid #0772ba;
+}
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0;

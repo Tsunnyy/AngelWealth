@@ -16,6 +16,7 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Angel Wealth!</title>
 </head>
 
@@ -28,8 +29,8 @@
                     <button class="dropbtn">All &nbsp;<span class="iconify"
                             data-icon="dashicons:arrow-down-alt2"></span></button>
                     <div class="dropdown-content">
-                        <a href="#">01</a>
-                        <a href="#">02</a>
+                        <a href="javascript:void(0)">01</a>
+                        <a href="javascript:void(0)">02</a>
                     </div>
                     <input type="text" class="input-feild" placeholder="Search item....">
                     <span class="iconify" data-icon="fa:search"></span>
@@ -43,7 +44,9 @@
         <div class="container">
             <div class="innerHeaderLogo">
                 <img src="images/logo.png" alt="logo" class="img-fluid">
-                <span class="iconify" data-icon="ep:menu"></span>
+                <div class="openNav">
+                    <span class="iconify" data-icon="ep:menu"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -51,8 +54,8 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">mutual funds</a>
+                <li><a href="javascript:void(0)" class="active">Home</a></li>
+                <li><a href="javascript:void(0)">mutual funds</a>
                     <span class="iconify" data-icon="dashicons:arrow-down-alt2"></span>
                     <ul class="nav-dropdown">
                         <li class="drop-down-link">
@@ -66,7 +69,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">life insurance</a>
+                <li><a href="javascript:void(0)">life insurance</a>
                     <span class="iconify" data-icon="dashicons:arrow-down-alt2"></span>
                     <ul class="nav-dropdown">
                         <li class="drop-down-link">
@@ -80,17 +83,47 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">ange gold</a></li>
-                <li><a href="#">fd</a></li>
-                <li><a href="#">pms</a></li>
-                <li><a href="#">health insurance</a></li>
-                <li><a href="#">Branch locator</a></li>
-                <li><a href="#">Get a call</a></li>
+                <li><a href="javascript:void(0)">ange gold</a></li>
+                <li><a href="javascript:void(0)">fd</a></li>
+                <li><a href="javascript:void(0)">pms</a></li>
+                <li><a href="javascript:void(0)">health insurance</a></li>
+                <li><a href="javascript:void(0)">Branch locator</a></li>
+                <li><a href="javascript:void(0)">Get a call</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="swiper mySwiper">
+    <div class="mobileNav">
+        <a href="javascript:void(0)" class="closebtn">&times;
+            <div class="container">
+                <ul>
+                    <li><a href="javascript:void(0)" class="active">Home</a></li>
+                    <li>
+                        <select class="form-control" id="sel2" name="select">
+                            <option>Mutual funds</option>
+                            <option>Mutual funds</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="form-control" id="sel2" name="select">
+                            <option>life insurance</option>
+                            <option>life insurance</option>
+                        </select>
+                    </li>
+                    <li><a href="javascript:void(0)">ange gold</a></li>
+                    <li><a href="javascript:void(0)">fd</a></li>
+                    <li><a href="javascript:void(0)">pms</a></li>
+                    <li><a href="javascript:void(0)">health insurance</a></li>
+                    <li><a href="javascript:void(0)">Branch locator</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="giveACall">
+        <span class="iconify" data-icon="eva:phone-call-fill"></span>
+    </div>
+
+    <section class="swiper mySwiper" id="mainSlider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="images/banner.jpg" alt="banner" class="img-fluid">
@@ -481,14 +514,353 @@
                     <div class="valueTitle">
                         <h2>OUR COMPANY VALUES</h2>
                     </div>
+                    <div class="layout">
+                        <input name="nav" type="radio" class="nav home-radio" id="home" checked="checked" />
+                        <div class="page home-page">
+                            <div class="page-contents">
+                                <h2>Our Comapany Quality</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quam ab cupiditate?
+                                    Atque
+                                    tempora porro amet obcaecati, eius, architecto labore, expedita quaerat accusantium
+                                    corrupti totam!</p>
+                                <div class="ckeckList">
+                                    <ul>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Our Company Growth
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            1000 Employed
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Customer Relationship
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Our Company Growth
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            1000 Employed
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Customer Relationship
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="nav" for="home">
+                            <span>
+                                Quality
+                                <span class="iconify" data-icon="bi:diamond-fill" style="color: white;"></span>
+                            </span>
+                        </label>
+
+                        <input name="nav" type="radio" class="about-radio" id="about" />
+                        <div class="page about-page">
+                            <div class="page-contents">
+                                <h2>Our Comapany Commitment</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quam ab cupiditate?
+                                    Atque
+                                    tempora porro amet obcaecati, eius, architecto labore, expedita quaerat accusantium
+                                    corrupti totam!</p>
+                                <div class="ckeckList">
+                                    <ul>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Our Company Growth
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            1000 Employed
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Customer Relationship
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Our Company Growth
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            1000 Employed
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Customer Relationship
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="nav" for="about">
+                            <span>
+                                Commitment
+                                <span class="iconify" data-icon="bi:diamond-fill" style="color: white;"></span>
+                            </span>
+                        </label>
+
+                        <input name="nav" type="radio" class="contact-radio" id="contact" />
+                        <div class="page contact-page">
+                            <div class="page-contents">
+                                <h2>Our Comapany Success</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quam ab cupiditate?
+                                    Atque
+                                    tempora porro amet obcaecati, eius, architecto labore, expedita quaerat accusantium
+                                    corrupti totam!</p>
+                                <div class="ckeckList">
+                                    <ul>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Our Company Growth
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            1000 Employed
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Customer Relationship
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Our Company Growth
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            1000 Employed
+                                        </li>
+                                        <li>
+                                            <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+                                            Customer Relationship
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="nav" for="contact">
+                            <span>
+                                Success
+                                <span class="iconify" data-icon="bi:diamond-fill" style="color: white;"></span>
+                            </span>
+
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="ourTeam">
+        <div class="container">
+            <div class="innerTeam">
+                <div class="teamTitle">
+                    <h2>OUR TEAM</h2>
+                </div>
+                <div class="mainTeam">
+                    <div class="profiles">
+                        <figure>
+                            <img src="images/img1.jpg" alt="person1" class="img-fluid">
+                            <figcaption>
+                                <h2>Tim Cock</h2>
+                                <p>INSURANCE ADVISOR</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="profiles">
+                        <figure>
+                            <img src="images/img2.jpg" alt="person2" class="img-fluid">
+                            <figcaption>
+                                <h2>Tim Cock</h2>
+                                <p>INSURANCE ADVISOR</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="profiles">
+                        <figure>
+                            <img src="images/img3.jpg" alt="person3" class="img-fluid">
+                            <figcaption>
+                                <h2>Tim Cock</h2>
+                                <p>INSURANCE ADVISOR</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="profiles">
+                        <figure>
+                            <img src="images/img1.jpg" alt="person1" class="img-fluid">
+                            <figcaption>
+                                <h2>Tim Cock</h2>
+                                <p>INSURANCE ADVISOR</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="NewSecion">
+                <div class="leftNews">
+                    <h2>LATEST NEWS</h2>
+                    <div class="newsInfo">
+                        <div class="newsImg">
+                            <img src="images/news1.jpg" alt="news">
+                        </div>
+                        <div class="newsPara">
+                            <h3>Heading Of News</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas iusto omnis illo
+                                sapiente sed quam quaerat qui</p>
+                        </div>
+                    </div>
+                    <div class="newsInfo">
+                        <div class="newsImg">
+                            <img src="images/news2.jpg" alt="news2">
+                        </div>
+                        <div class="newsPara">
+                            <h3>Heading Of News</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas iusto omnis illo
+                                sapiente sed quam quaerat qui</p>
+                        </div>
+                    </div>
+                    <div class="newsInfo">
+                        <div class="newsImg">
+                            <img src="images/news3.jpg" alt="news3">
+                        </div>
+                        <div class="newsPara">
+                            <h3>Heading Of News</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas iusto omnis illo
+                                sapiente sed quam quaerat qui</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightForm">
+                    <h2>GET A CALL</h2>
+                    <div class="form">
+                        <div class="form-input">
+                            <input type="text" name="name" placeholder="Your Name" class="form-control">
+                        </div>
+                        <div class="form-input">
+                            <input type="email" name="email" placeholder="Your Email" class="form-control">
+                        </div>
+                        <div class="form-input">
+                            <select class="form-control" id="sel2" name="select">
+                                <option>I like to umquam</option>
+                                <option>I like to umquam</option>
+                            </select>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="mob" id="mob" placeholder="Your Phone Number" class="form-control">
+                        </div>
+                        <div class="form-input">
+                            <button class="btn submitBtn">Submit Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container paddngarea">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 footerList">
+                    <div class="footerImg">
+                        <img src="images/foot-logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="footerPara">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam harum odit quibusdam
+                            nesciunt optio recu Lorem ipsum dolor sit amet.</p>
+                        <div class="callNo">
+                            <span class="iconify" data-icon="bxs:phone"></span>
+                            <a href="tel:18002549874">1800 - 254 - 9874</a>
+                        </div>
+                        <div class="mailId">
+                            <a href="mailto:contact@mefinance.com">contact@mefinance.com</a>
+                        </div>
+                        <div class="socialMedia">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span class="iconify" data-icon="eva:facebook-fill"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span class="iconify" data-icon="ant-design:twitter-outlined"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span class="iconify" data-icon="ant-design:google-plus-outlined"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span class="iconify" data-icon="akar-icons:linkedin-fill"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span class="iconify" data-icon="ant-design:skype-filled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footerList">
+                    <div class="footerTitle">
+                        <h2>OUR SERVICES</h2>
+                    </div>
+                    <div class="servicesItem">
+                        <ul>
+                            <li><a href="javascript:void(0)">Investment Planning</a></li>
+                            <li><a href="javascript:void(0)">Retirement Planning</a></li>
+                            <li><a href="javascript:void(0)">Mutual Funds</a></li>
+                            <li><a href="javascript:void(0)">Saving & Investments</a></li>
+                            <li><a href="javascript:void(0)">Tax Advisory Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footerList">
+                    <div class="footerTitle">
+                        <h2>YOUTUBE CHANNEL</h2>
+                    </div>
+                    <ul class="youtubeVideo">
+                        <li><img src="images/profile-1.png" alt="profile" class="img-fluid"></li>
+                        <li><img src="images/profile-2.png" alt="profile" class="img-fluid"></li>
+                    </ul>
+                    <ul class="youtubeVideo">
+                        <li><img src="images/profile-3.png" alt="profile" class="img-fluid"></li>
+                        <li><img src="images/profile-4.png" alt="profile" class="img-fluid"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>2016 © Angel Broking Pvt Ltd</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
