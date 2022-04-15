@@ -1,0 +1,133 @@
+@media (max-width: 1199px) {
+  .innerHeader p {
+    font-size: 14px;
+  }
+  .innerHeader .dropdown {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .innerHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .innerHeader p {
+    margin-bottom: 10px;
+  }
+  .innerHeader p:last-child {
+    display: none;
+  }
+  .innerHeader .dropdown {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .innerHeader p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  nav ul li a {
+    font-size: 10px;
+  }
+  nav ul li .nav-dropdown {
+    min-width: 100px;
+  }
+  nav ul li .nav-dropdown .drop-down-link a {
+    padding: 5px;
+    font-size: 10px;
+  }
+  nav ul li:last-child a {
+    padding: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  .headerLogo .innerHeaderLogo svg {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
+    padding-bottom: 20px;
+    line-height: 1.2;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg p {
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg button {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mySwiper .swiper-wrapper .swiper-slide .textOnImg {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .offers .innerOffer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .offers .innerOffer .weOfferTitle{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    border-right: none;
+    padding-bottom: 20px;
+    padding-right: 0;
+  }
+  .offers .innerOffer .weOfferTitle h2:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #1c3a5d;
+    left: 0;
+    bottom: -20px;
+    display: block;
+  }
+  .offers .innerOffer .weOfferSubTitle{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .offers .mainFeatures {
+    text-align: center;
+  }
+  .offers .mainFeatures .innerFeature {
+    flex-direction: column;
+  }
+  .offers .mainFeatures .innerFeature .featureTxt {
+    margin: 20px 0;
+  }
+  .offers .mainFeatures .innerFeature .featureTxt h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 576px) {
+    .offers .mainFeatures .innerFeature {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
