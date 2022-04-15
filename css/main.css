@@ -280,11 +280,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: yellow;
+  color: #ffca0d;
 }
 
 nav ul li:last-child {
-  background: yellow;
+  background: #ffca0d;
 }
 
 nav ul li:last-child a {
@@ -381,8 +381,8 @@ nav ul li:hover .nav-dropdown {
 
 .mySwiper .swiper-wrapper .swiper-slide .textOnImg button {
   padding: 10px 30px;
-  border: 1px solid yellow;
-  background: yellow;
+  border: 1px solid #ffca0d;
+  background: #ffca0d;
   font-weight: 700;
 }
 
@@ -534,15 +534,23 @@ nav ul li:hover .nav-dropdown {
   background-color: #00aaa4;
 }
 
-.innerAboutUs .aboutImage, .innerAboutUs .aboutUsTxt{
+.innerAboutUs .aboutImage,
+.innerAboutUs .aboutUsTxt {
   flex: 0 0 50%;
   max-width: 50%;
 }
-.innerAboutUs .aboutImage{
+.innerAboutUs .aboutImage {
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
-.innerAboutUs .aboutImage::before{
+.innerAboutUs .aboutImage::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -555,17 +563,17 @@ nav ul li:hover .nav-dropdown {
   z-index: 2;
 }
 
-.innerAboutUs .aboutUsTxt{
+.innerAboutUs .aboutUsTxt {
   padding: 0 50px;
 }
-.innerAboutUs .aboutUsTxt .aboutTitle h2{
+.innerAboutUs .aboutUsTxt .aboutTitle h2 {
   font-size: 24px;
   font-weight: 500;
   color: #fff;
   position: relative;
   margin-bottom: 60px;
 }
-.innerAboutUs .aboutUsTxt .aboutTitle h2::after{
+.innerAboutUs .aboutUsTxt .aboutTitle h2::after {
   position: absolute;
   content: "";
   background: #fff;
@@ -575,12 +583,173 @@ nav ul li:hover .nav-dropdown {
   left: 0;
 }
 
-.innerAboutUs .aboutUsTxt .aboutPara p{
+.innerAboutUs .aboutUsTxt .aboutPara p {
   margin-bottom: 20px;
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 14px;
   line-height: 15px;
-    font-weight: 300;
+  font-weight: 300;
 }
 
+.innerAboutUs .aboutUsTxt .aboutFeatures {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 70px;
+}
+.innerAboutUs .aboutUsTxt .aboutFeatures .featureMain {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+.innerAboutUs .aboutUsTxt .aboutFeatures .featureMain:nth-child(2) {
+  border-left: 1px dashed #fff;
+  padding: 0 10px;
+  border-right: 1px dashed #fff;
+}
+
+.innerAboutUs .aboutUsTxt .aboutFeatures .featureMain .featurePoints h2 {
+  margin: 5px;
+  color: #fff;
+  font-weight: 500;
+}
 /* ABOUT US SECTION ENDS */
+
+/* FACT AND FIGURE SECTION ENDS */
+.factnFigure {
+  padding: 70px 0;
+  background: url(../images/counter-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.factnFigure .innerFactnFigure .factTitle h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  position: relative;
+}
+.factnFigure .innerFactnFigure .factTitle h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #22b04b;
+}
+
+.factsFigure {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.factsFigure .figureNumbers {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.factsFigure .figureNumbers h2 {
+  font-size: 35px;
+  color: #0772ba;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.factsFigure .figureNumbers p {
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* FACT AND FIGURE SECTION ENDS */
+.companyValue {
+  padding: 70px 0;
+}
+
+.mainCompanyValue {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.mainCompanyValue .testimonials {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.mainCompanyValue .ourValues {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.mainCompanyValue .testimonials .valueTitle h2,
+.mainCompanyValue .ourValues .valueTitle h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.mainCompanyValue .testimonials .valueTitle h2::after,
+.mainCompanyValue .ourValues .valueTitle h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -20px;
+  left: 0;
+  background: #22b04b;
+}
+.testSlider .custReview .customerProfile {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.testSlider .custReview .customerProfile .custDetails{
+  padding: 20px;
+}
+.testSlider .custReview .customerProfile .custDetails h2{
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.testSlider .custReview .customerProfile .custDetails p{
+  font-size: 16px;
+}
+.testSlider .custReview .customerProfile .custDetails .starRating{
+  margin-top: 20px;
+}
+.testSlider .custReview .customerWords p{
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+  padding: 20px 0 10px 0;
+}
+
+.testSlider .custReview .customerWords img{
+  width: unset;
+}
