@@ -38,10 +38,10 @@ var swiper = new Swiper("#customerSlider", {
 $(function () {
     $('.innerHeaderLogo svg').on('click', function () {
         $(".mobileNav").addClass("mobactive");
-        $(".body").css({'overflow':'hidden'});
+        $("body").css("overflow", "hidden");
     })
     $('.mobileNav .closebtn').on('click', function () {
         $(".mobileNav").removeClass("mobactive");
-        $(".body").css({'overflow':'unset'});
+        $("body").css("overflow", "unset");
     })
 })

@@ -1,26 +1,28 @@
-@media (max-width: 1199px) {
-  .innerHeader p {
+@media (max-width: 991px) {
+  .newHeaderMain {
+    text-align: center;
+  }
+  .newHeaderMain p {
     font-size: 14px;
   }
-  .innerHeader .dropdown {
-    font-size: 14px;
+  .newHeaderPara {
+    flex: 0 0 80%;
+    max-width: 80%;
+    margin: 10px 0;
+  }
+  .searchWithIcon {
+    display: none !important;
+  }
+  .dayTime {
+    display: none !important;
+  }
+  .afterSearchIcon svg {
+    display: block;
   }
 }
-@media (max-width: 991px) {
-  .innerHeader {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .innerHeader p {
-    margin-bottom: 10px;
-  }
-  .innerHeader p:last-child {
-    display: none;
-  }
-  .innerHeader .dropdown {
-    margin-bottom: 10px;
+@media (max-width: 767px) {
+  .newHeaderMain p {
+    font-size: 12px;
   }
 }
 
@@ -28,6 +30,11 @@
   .innerHeader p {
     font-size: 12px;
     text-align: center;
+  }
+  .afterSearchIcon svg {
+    font-size: 18px;
+    top: 13px;
+    right: 6px;
   }
 }
 
@@ -52,8 +59,8 @@
   nav {
     display: none;
   }
-  
-  .giveACall{
+
+  .giveACall {
     display: block;
     position: fixed;
     width: 40px;
@@ -64,7 +71,7 @@
     border-radius: 100%;
     z-index: 999;
   }
-  .giveACall svg{
+  .giveACall svg {
     position: absolute;
     right: 11px;
     bottom: 11px;
@@ -93,10 +100,13 @@
   .mySwiper .swiper-wrapper .swiper-slide .textOnImg button {
     padding: 10px 25px;
   }
+  .testSlider .custReview .customerWords img {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
-  #mainSlider{
+  #mainSlider {
     height: 370px;
     object-fit: cover;
   }
@@ -249,6 +259,7 @@
   .mainCompanyValue .ourValues {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-left: 0;
   }
   .page-contents p {
     margin-bottom: 30px;
@@ -295,12 +306,15 @@
   .profiles figure figcaption p {
     font-size: 10px;
   }
+  .companyValue,
+  .ourTeam,
+  .news,
+  .paddngarea {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 991px) {
-  .news {
-    padding: 40px 0;
-  }
   .NewSecion {
     flex-direction: column;
   }
@@ -309,18 +323,28 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .newsInfo .newsPara p{
+  .NewSecion .rightForm h2{
+    margin-top: 20px;
+  }
+  .NewSecion .rightForm {
+    padding-left: 0;
+  }
+  .newsInfo .newsPara p {
     font-size: 12px;
   }
-  .footerList{
+  .footerList {
     padding: 20px 15px;
   }
-  .socialMedia ul{
+  .socialMedia ul {
     margin: 30px 0 0;
   }
 }
 @media (max-width: 576px) {
-  .footerList{
-    margin: 15px 15px;
+  .footerList {
+    padding: 15px 15px;
+  }
+
+  .paddngarea .row {
+    all: unset;
   }
 }
